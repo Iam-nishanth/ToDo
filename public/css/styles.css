@@ -55,16 +55,92 @@ form.item {
   text-align: center;
   margin-left: 20px;
 }
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  margin-left: 0 !important;
+}
 
-button {
-  min-height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  color: whitesmoke;
+.item:last-child {
+  border-bottom: 0;
+}
+
+.item:hover {
+background-color: #abb1b8;
+
+}
+.list-types {
+  
   font-size: 2rem;
+  color: #eae1dc;
+  opacity: 0.5;
+  transition: 0.2s ease-out;
+  margin: 0 1rem 0 1rem;
+}
+.menu {
+  text-align: right;
+  margin-right: 5rem;
+  position: sticky;
+  top: 3rem;
+}
+
+.list-types:hover {
+  transition: 0.2s ease-in;
+  transform: scale(2);
+  opacity: 1;
+}
+@media(max-width: 305px) {
+  .list-types {
+    margin: 0 0.6rem 0 0.6rem;
+  }
+ }
+@media(max-width: 1095px) {
+  .box {
+    width: 95%;
+  }
+
+  .menu {
+    position: relative;
+    top: 2.2rem;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 3.3rem;
+  }
+
+  .list-types {
+    margin: 0 1.1rem 0 1.1rem;
+  }
+
+  button {
+    margin-right: 0.625rem;
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+  .social {
+    margin-bottom: 1.5rem;
+  }
+}
+button{
+  min-height: 3.125rem;
+  width: 3.125rem;
+  border-radius: 50%;
   border-color: transparent;
-  background-color: darkslategray;
+  background-color: #2c3e50;
+  color: #fff;
+  font-size: 1.875rem;
+  padding: 0.375rem;
   border-width: 0;
+  transition: 0.2s ease-out;
+
+}
+
+button:hover {
+  border-radius: 35%;
+  transition: 0.2s ease-in;
+  background-color: #2c3e50;
+  cursor: pointer;
+  /* border: 2px solid white; */
 }
 
 input[type="text"] {
@@ -98,5 +174,32 @@ footer {
   color: white;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+}
+
+h4 {
+  color: #2c3e50;
   font-size: 1.2rem;
+}
+.social a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #cbbfb6;
+  padding: 0;
+  margin: 1rem;
+  transition: 0.1s;
+}
+
+.soc-icon-1:hover {
+  transform: scale(1.2);
+  color: #cd486b;
+}
+
+.soc-icon-2:hover {
+  transform: scale(1.2);
+  color: #1DA1F2;
+}
+
+.soc-icon-3:hover {
+  transform: scale(1.2);
+  color: #BB001B;
 }

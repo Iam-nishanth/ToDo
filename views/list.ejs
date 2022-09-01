@@ -1,4 +1,10 @@
 <%- include("header") -%>
+<div class="menu">
+  <a class="list-types" href="/"><i class="fas fa-home"></i></a>
+  <a class="list-types" href="/worklist"><i class="fas fa-briefcase"></i></a>
+  <a class="list-types" href="/wishlist"><i class="fas fa-heart"></i></a>
+  <a class="list-types" href="/extras"><i class="fas fa-layer-group"></i></a>
+</div>
 
   <div class="box" id="heading">
     <h1> <%= listTitle %> </h1>
@@ -21,7 +27,7 @@
 
       <form class="item" action="/" method="post">
         <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
-        <button type="submit" name="list" value="<%= listTitle %>">+</button>
+        <button type="submit" name="list" class="plus-button" value="<%= listTitle %>">+</button>
       </form>
   </div>
 
